@@ -11,7 +11,7 @@ Browse to http://localhost:3000 to see the application in action.
 
 ## Custom renderers: Media Capture
 
-![Media Capture Screen](MediacaptureScreen.png)
+![Media Capture Screen](./MediacaptureScreen.png)
 
 ## File Structure
 
