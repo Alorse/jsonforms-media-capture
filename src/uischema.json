@@ -50,6 +50,16 @@
       "options": {
         "multi": true
       }
+    },
+    {
+      "type": "Group",
+      "elements": [
+        {
+          "type": "Control",
+          "scope": "#/properties/media-capture",
+          "label": "Pictures"
+        }
+      ]
     }
   ]
 }
