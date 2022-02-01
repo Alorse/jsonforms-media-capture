@@ -11,6 +11,9 @@ import {
   materialCells,
   materialRenderers,
 } from '@jsonforms/material-renderers';
+import MediaCaptureControl, {
+  MediaCaptureControlTester,
+} from "./MediaCapture/MediaCaptureControl";
 import RatingControl from './RatingControl';
 import ratingControlTester from './ratingControlTester';
 import { makeStyles } from '@mui/styles';
@@ -42,7 +45,7 @@ const useStyles = makeStyles({
 });
 
 const initialData = {
-  name: 'Send email to Adrian',
+  name: 'Send email to Fredo',
   description: 'Confirm if you have passed the subject\nHereby ...',
   done: true,
   recurrence: 'Daily',
@@ -53,6 +56,7 @@ const renderers = [
   ...materialRenderers,
   //register custom renderers
   { tester: ratingControlTester, renderer: RatingControl },
+  { tester: MediaCaptureControlTester, renderer: MediaCaptureControl },
 ];
 
 const App = () => {
